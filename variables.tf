@@ -1,5 +1,5 @@
 variable "vpc-name" {
-  type = "string"
+  type    = "string"
   default = "main-vpc"
 }
 
@@ -8,7 +8,7 @@ variable "cidr" {
 }
 
 variable "rt-name" {
-  type = "string"
+  type    = "string"
   default = "public-rt"
 }
 
