@@ -5,7 +5,7 @@ output "vpc-id" {
 
 output "rt-id" {
   description = "Main public RT identifier."
-  value       = "${aws_route_table.main.id}"
+  value       = "${aws_default_route_table.main.id}"
 }
 
 output "igw-id" {
