@@ -1,23 +1,28 @@
 variable "vpc-name" {
-  type    = "string"
-  default = "main-vpc"
+  description = "VPC name. This will be uses as the 'Name' tag value."
+  type        = "string"
+  default     = "main-vpc"
 }
 
 variable "cidr" {
-  type = "string"
+  description = "VPC's CIDR range."
+  type        = "string"
 }
 
 variable "rt-name" {
-  type    = "string"
-  default = "public-rt"
+  description = "VPC's main public route table name."
+  type        = "string"
+  default     = "public-rt"
 }
 
 variable "tags" {
-  type    = "map"
-  default = {}
+  description = "Additional tags."
+  type        = "map"
+  default     = {}
 }
 
 variable "igw-name" {
-  type    = "string"
-  default = "main-igw"
+  description = "Internet gateway name. This will be uses as the 'Name' tag value."
+  type        = "string"
+  default     = "main-igw"
 }
