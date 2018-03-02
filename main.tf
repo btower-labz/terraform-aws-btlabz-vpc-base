@@ -7,7 +7,7 @@ resource "aws_vpc" "main" {
   tags = "${merge(
     var.tags,
     map(
-      "Name", "${var.vpc-name}"
+      "Name", "${var.vpc_name}"
     )
   )}"
 }
@@ -18,7 +18,7 @@ resource "aws_internet_gateway" "main" {
   tags = "${merge(
     var.tags,
     map(
-      "Name", "${var.igw-name}"
+      "Name", "${var.igw_name}"
     )
   )}"
 }
@@ -29,7 +29,7 @@ resource "aws_internet_gateway" "main" {
 #  tags = "${merge(
 #    var.tags,
 #    map(
-#      "Name", "${var.rt-name}"
+#      "Name", "${var.rt_name}"
 #    )
 #  )}"
 #}
@@ -40,7 +40,7 @@ resource "aws_default_route_table" "main" {
   tags = "${merge(
     var.tags,
     map(
-      "Name", "${var.rt-name}"
+      "Name", "${var.rt_name}"
     )
   )}"
 }
