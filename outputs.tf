@@ -12,3 +12,9 @@ output "igw_id" {
   description = "AWS Internet gateway identifier."
   value       = "${aws_internet_gateway.main.id}"
 }
+
+output "vpc_id" {
+  description = "VPC CIDR block."
+  value       = "${aws_vpc.main.cidr_block}"
+}
+
