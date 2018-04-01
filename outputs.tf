@@ -13,7 +13,7 @@ output "igw_id" {
   value       = "${aws_internet_gateway.main.id}"
 }
 
-output "vpc_id" {
+output "vpc_cidr" {
   description = "VPC CIDR block."
   value       = "${aws_vpc.main.cidr_block}"
 }
