@@ -17,5 +17,6 @@
 |------|-------------|
 | igw_id | AWS Internet gateway identifier. |
 | rt_id | Main public RT identifier. |
+| vpc_cidr | VPC CIDR block. |
 | vpc_id | VPC identifier. |
 
