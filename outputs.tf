@@ -1,19 +1,20 @@
 output "vpc_id" {
   description = "VPC identifier."
-  value       = "${aws_vpc.main.id}"
+  value       = aws_vpc.main.id
 }
 
 output "rt_id" {
   description = "Main public RT identifier."
-  value       = "${aws_default_route_table.main.id}"
+  value       = aws_default_route_table.main.id
 }
 
 output "igw_id" {
   description = "AWS Internet gateway identifier."
-  value       = "${aws_internet_gateway.main.id}"
+  value       = aws_internet_gateway.main.id
 }
 
 output "vpc_cidr" {
   description = "VPC CIDR block."
-  value       = "${aws_vpc.main.cidr_block}"
+  value       = aws_vpc.main.cidr_block
 }
+
